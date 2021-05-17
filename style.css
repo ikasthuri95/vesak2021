@@ -1,0 +1,122 @@
+@font-face{
+  font-family: unbaron;
+  src: url(un-baron-prod.ttf);
+}
+
+@font-face{
+  font-family: fmabaya;
+  src: url(UN-Abhaya-6-110-kern.ttf);
+}
+
+body{
+	color: #fff;
+	background: #333641;
+  font-family: fmabaya;
+}
+
+.header {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 7vw;
+  font-family: unbaron;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+
+@media (max-width: 400px){
+  .header{
+    font-size: 2em;
+  }
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+.footer{
+  font-size: 1em;
+  margin: auto;
+  background-color: #3a393e;
+  color: gray;
+  text-align: center;
+}
+
+.caption {
+  text-align: center;
+  color: grey;
+  text-decoration: none;
+}
+
+.btndefault {
+  border-color: #e7e7e7;
+  color: white;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.btndefault:hover {
+  background: #e7e7e7;
+  color: gray;
+}
+
+.thumb{
+   margin-bottom: 30px;
+}
+
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+   
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;  
+    }
+
+
+.photo a{
+  margin:10px;
+}
+
